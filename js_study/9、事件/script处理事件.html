@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>处理时间</title>
+  </head>
+  <body>
+    <button onclick="show()">点击我</button>
+    <script>
+      function show() {
+        alert('你好，我在这里！')
+      }
+
+      //给元素绑定事件监听
+      var x = document.getElementById('demo')
+      x.onclick = function() {
+        document.getElementById('demo').innerHTML = new Date()
+      }
+    </script>
+    <input type="text" id="name" onchange="change()" />
+    <script>
+      //onchange事件
+      function change() {
+        var x = document.getElementById('name')
+        x.nodeValue = x.nodeValue.toUpperCase()
+      }
+    </script>
+  </body>
+</html>

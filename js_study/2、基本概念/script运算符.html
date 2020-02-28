@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>运算符</title>
+    <script>
+      //赋值运算符
+      var x = 3
+      var y = 4
+      x = y
+      //typeof运算符
+      document.write(typeof undefined === 'undefined')
+      document.write('<br>')
+      document.write(typeof true === 'boolean')
+      document.write('<br>')
+      document.write(typeof 42 === 'number')
+      document.write('<br>')
+      document.write(typeof '42' === 'string')
+      document.write('<br>')
+      document.write(typeof { lift: 42 } === 'object')
+      document.write('<br>')
+      document.write(typeof Symbol() === 'symbol')
+      document.write('<br>')
+      document.write(typeof null === 'object')
+      document.write('<br>')
+      //算术运算符
+      var x = 12 + 3
+      document.write('12 + 3=' + x + '<br>')
+      var x = 10
+      var y = x + 7 + 20 + 45 + 6548
+      document.write('10 + 7 + 20 + 45 + 6548=' + y + '<br>')
+      var x = 9 * 10
+      document.write('9 * 10=' + x + '<br>')
+      var x = 100 / 5
+      document.write('100 / 5=' + x + '<br>')
+      //比较运算符
+      var num = 10
+      document.write(num == 8)
+      document.write('<br>')
+      //逻辑运算符
+      4 > 1 && 10 < 15
+      //三元运算符
+      var age = 10
+      var isAdult = age < 18 ? '未成年人' : '成年人'
+      document.write(isAdult)
+      //实战
+      a += b
+      a = a + b
+      var a = 5
+      var b = 6
+      var c = 'hello'
+      var d = 'Nier'
+      a += b
+      c += d
+    </script>
+  </head>
+
+  <body></body>
+</html>

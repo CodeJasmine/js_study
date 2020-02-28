@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>事件监听</title>
+    <script>
+      element.addEventListner('click', myFunction)
+      element.addEventListner('mouseover', myFunction)
+      function myFunction() {
+        alert(HelloWorld)
+      }
+
+      // 删除事件监听
+      element.removeEventListener('mouseover', myFunction)
+    </script>
+  </head>
+  <body>
+    <button id="demo">开始</button>
+    <script>
+      var btn = document.getElementById('demo')
+      btn.addEventListener('click', myFunction)
+      function myFunction1() {
+        alert(Math.random())
+        btn.removeEventListener('click', myFunction)
+      }
+    </script>
+  </body>
+</html>

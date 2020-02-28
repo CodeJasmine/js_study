@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>函数参数</title>
+    <script>
+      //函数显示参数和隐式参数
+      /* functionName(paramter1,paramter2,paramter3){}
+
+      function sum(){
+          return arguments[0]+arguments[1]
+      }
+      sum(1,2) */
+
+      //多个参数
+      function sayHello(name, age) {
+        console.log(name + '年龄是:：' + age + '岁')
+      }
+      sayHello('Jhon', 20)
+      sayHello(20, 'Jhon')
+
+      function sayHello(name, age) {
+        console.log(name + '年龄是' + age + '岁')
+      }
+      sayHello('Jhon')
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML_DOM</title>
+    <script>
+      /* //Document对象
+        document.body.innerHTML = "some text"
+
+        //选择元素
+        document.getElementById(id)
+        document.getElementsByclassName(name)
+        document.getElementsByTagName(name) 
+
+        var elem = document.getElementById("demo")
+        elem.innerHTML = 'HelloWorld'*/
+    </script>
+  </head>
+  <body>
+    <div class="demo">
+      <span class="demo">Hi I'm Loen!</span>
+    </div>
+    <p class="demo">This is a paragraph</p>
+
+    <script>
+      var arr = document.getElementsByClassName('demo')
+      arr[1].innerHTML = 'Hi I am Peter'
+    </script>
+
+    <p>hi</p>
+    <p>hello</p>
+    <p>hi</p>
+    <script>
+      var arr = document.getElementsByTagName('p')
+      for (var x = 0; x < arr.length; x++) {
+        arr[x].innerHTML = 'Hi there'
+      }
+    </script>
+
+    //使用DOM
+    <div id="demo">
+      <p>一些文本</p>
+      <p>另一些文本</p>
+    </div>
+    <script>
+      var a = document.getElementById('demo')
+      var arr = a.childNodes
+      for (var x = 0; x < arr.length; x++) {
+        arr[x].innerHTML = '新的文本'
+      }
+    </script>
+
+    //改变样式
+    <div id="demo" style="width: 200px;">一些文本</div>
+    <script>
+      var x = document.getElementById('demo')
+      x.style.color = '6600FF'
+      x.style.width = '100px'
+    </script>
+
+    //添加和移除元素
+    <div id="demo">一些文本</div>
+    <script>
+      var p = document.createElement('p')
+      var node = document.createTextNode('一些新的文本')
+      p.appendChild(node)
+
+      var div = document.getElementById('demo')
+      div.appendChild(p)
+    </script>
+
+    //移除元素
+    <div id="demo">
+      <p id="p1">这是一个段落，</p>
+      <p id="p2"></p>
+    </div>
+    <script>
+      var parent = document.getElementById('demo')
+      var child = document.getElementById('p1')
+      parent.parentNode.removeChild(child)
+    </script>
+
+    //替换元素
+    <div id="demo">
+      <p id="p1">这是一个段落</p>
+      <p id="p2">这是另一个段落</p>
+    </div>
+    <script>
+      var p = document.createElement('p')
+      var node = document.createTextNode('这是新的文本')
+      p.appendChild(node)
+
+      var parent = document.getElementById('demo')
+      var child = document.getElementById('p1')
+      parent.replaceChild(p, child)
+    </script>
+  </body>
+</html>

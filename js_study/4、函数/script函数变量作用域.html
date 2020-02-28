@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>函数变量作用域</title>
+    <script>
+      /* //局部作用域
+      function myFuntion() {
+        var carName = '大众'
+      }
+
+      //全局变量
+      var carName = '大众'
+      function myFuntion() {
+        carName = '大众'
+      }
+
+      function myFuntion() {
+        window.carName
+      }
+      console.log(myFuntion())
+
+      //return语句
+      function sum(a, b) {
+        return a + b
+      }
+      document.write(sun(1, 2))
+ */
+      /* //Alert警告框
+      alert('你好，这是一个警告框。\n你必须确定')
+
+      //Prompt提示框
+      var user = prompt('请输入你的名字：')
+      alert('欢迎' + user)
+ */
+      //Confirm确认框
+      var result = confirm('你确定要离开我吗？')
+      if (result == true) {
+        alert('你走吧，我不寂寞')
+      } else {
+        alert('感谢你来陪我')
+      }
+    </script>
+  </head>
+  <body>
+    <p id="carName">大众</p>
+  </body>
+</html>

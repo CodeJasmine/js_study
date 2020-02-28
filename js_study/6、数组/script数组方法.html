@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数组方法</title>
+    <script>
+      var a = []
+      a[0] = 'zero'
+      a[1] = 'one'
+      console.log(a)
+
+      var a = []
+      a.push('zero')
+      a.push('one', 'two')
+      console.log(a)
+
+      var oneDown = [1, 4, 6].pop()
+      console.log(oneDown)
+      var oneDown = [1, 4, 6].shift()
+      console.log(oneDown)
+
+      var a = ['zero']
+      a.unshift('one')
+      console.log(a)
+
+      var c1 = ['HTML', 'CSS']
+      var c2 = ['JS', 'Python']
+      var courses = c1.concat(c2)
+
+      //indexOf()方法
+      var fruits = ['香蕉', '橙子', '苹果', '甜瓜', '苹果']
+      var a = fruits.indexOf('苹果')
+      var b = fruits.indexOf('樱桃')
+      console.log(a)
+      console.log(b)
+
+      //slice()方法
+      var fruits = ['banana', 'orange', 'lemon', 'apple', 'mango']
+      var citrus = fruits.slice(1, 3)
+      console.log(citrus)
+    </script>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      var numbers = [64, 45, 72, 11, 49]
+      function myFuntion(item, index) {
+        var demo = document.getElementById('demo')
+        demo.innerHTML = demo.innerHTML + 'index[' + index + ']:' + item + '<br>'
+      }
+      numbers.forEach(myFuntion)
+    </script>
+  </body>
+</html>

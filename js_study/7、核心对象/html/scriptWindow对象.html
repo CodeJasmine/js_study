@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window对象</title>
+    <script>
+      /*     //Window对象属性
+      var InnerHeight = window.innerHeight
+      console.log(InnerHeight)
+      var InnerWidth = window.innerWidth
+      console.log(InnerWidth)
+      var OuterHeight = window.OuterHeight
+      console.log(OuterHeight)
+      var OuterWidth = window.OuterWidth
+      console.log(OuterWidth)
+      var winscreenLeft = window.screenLeft
+      console.log(screenLeft)
+      var winscreenTop = window.screenTop
+      console.log(screenTop)
+
+      //Window对象方法
+      alert('HelloWorld')
+      window.alert('HelloWorld')
+ */
+      /* function open_win() {
+        window.open('http://www.baidu.com')
+      }
+      open_win() */
+      /* function openwin() {
+        myWindow = window.open('', '', 'width=200, height=100')
+        myWindow.document.write("<p>这是'我的窗口'</p>")
+        mywindow.focus()
+      }
+      openwin() */
+      /* var myWindow = window.open('', '', 'width=200,height=100')
+      myWindow.document.write("<p>这是'我的窗口'</p>")
+      setTimeout(function() {
+        myWindow.close()
+      }, 3000) */
+
+      var myVar
+      function myFunction() {
+        myVar = setTimeout(function() {
+          alert('Hello')
+        }, 3000)
+      }
+      myFunction()
+
+      function myStopFunction() {
+        clearTimeout(myVar)
+      }
+      myStopFunction()
+    </script>
+  </head>
+  <body></body>
+</html>

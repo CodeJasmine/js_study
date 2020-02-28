@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幻灯片案例</title>
+  </head>
+  <body>
+    <div>
+      <button onclick="prev()">上一张</button>
+      <img
+        id="slider"
+        style="width: 600px; height: 300px;"
+        src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1582868613&di=0bec52a0e352baf38cba5b0104cb8811&src=http://a0.att.hudong.com/16/12/01300535031999137270128786964.jpg"
+        alt=""
+      />
+      <button onclick="next()">下一张</button>
+    </div>
+    <script>
+      var images = [
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582878696021&di=ef84d5e1b53eaaf8ecd3df52875be758&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F21%2F09%2F01200000026352136359091694357.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582878696021&di=330568d86f70473e8d75d6f0ab865eba&imgtype=0&src=http%3A%2F%2Fa2.att.hudong.com%2F36%2F48%2F19300001357258133412489354717.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582878696021&di=e7c16bc122a1398be11ae45e98fafeec&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F78%2F52%2F01200000123847134434529793168.jpg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582878696021&di=acab61a96030afa655bde6c2e1414021&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F14%2F75%2F01300000164186121366756803686.jpg'
+      ]
+      var num = 0
+      function next() {
+        var slider = document.getElementById('slider')
+        num++
+        if (num >= images.length) {
+          num = 0
+        }
+        slider.src = images[num]
+      }
+      function prev() {
+        var slider = document.getElementById('slider')
+        num--
+        if (num < 0) {
+          num = images.length - 1
+        }
+        slider.src = images[num]
+      }
+    </script>
+  </body>
+</html>

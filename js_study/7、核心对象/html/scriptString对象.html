@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String对象</title>
+    <script>
+      var txt = new String('String')
+      var txt = 'String'
+
+      var str = 'HelloWorld'
+      var a = str.toLowerCase()
+      console.log(a)
+      var b = str.toUpperCase()
+      console.log(b)
+      var c = '    HelloWorld   '.trim()
+      console.log(c)
+
+      var str = 'Hello World , welcome to the w3school.'
+      var n = str.indexOf('Welcome')
+      console.log(n)
+      var c = str.indexOf('Lone')
+      console.log(c)
+
+      var str = 'Mr Blue has ablue house and a blue car and a green hat'
+      var n = str.replace('blue', 'red')
+      console.log(n)
+      var c = str.replace(/blue/g, 'red')
+      console.log(c)
+
+      var str = 'HelloWorld'
+      document.write(str.substring(3) + '<br>')
+      document.write(str.substring(3, 7) + '<br>')
+    </script>
+  </head>
+  <body></body>
+</html>

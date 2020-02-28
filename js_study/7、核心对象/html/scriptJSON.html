@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+    <script>
+      //JSON.parse()方法
+      /*   var text =
+        '{"employees":[' +
+        '{"name":"baidu","site":"http://www.baidu.com"},' +
+        '{"name":"Google","site":"http://www.google.com"},' +
+        '{"name":"Taobao","site":"http://www.taobao.com"}]}'
+      obj = JSON.parse(text)
+      document.getElementById('demo').innerHTML = obj.employees[1].name + ' ' + obj.employees[1].site
+ */
+      /* JSON.parse('{"p":5,"s":1.5,"t":-3}', function(k, v) {
+        if (k == '') return v
+        return (v = 2)
+      })
+
+      JSON.parse('{"1":1,"2":2,"3":{"4":4,"5":{"6":6}}}', function(k, v) {
+        console.log(k)
+        return v
+      }) */
+
+      var str = { name: 'baidu', site: 'http://baidu.com' }
+      str_prtty1 = JSON.stringify(str)
+      document.write('只要有一个参数情况：')
+      document.write('<br>')
+      document.write('<pre>' + str_prtty1 + '</pre>')
+
+      document.write('<br>')
+      str_prtty2 = JSON.stringify(str, null, 4)
+      document.write('使用参数情况：')
+      document.write('<br>')
+      document.write('<pre>' + str_prtty2 + '</pre>')
+    </script>
+  </head>
+  <body></body>
+</html>
